@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #0c0a09;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-imperial-script {
+  font-family: "Imperial Script", serif;
+  font-weight: 400;
+  font-weight: 500;
+  font-style: normal;
+}
