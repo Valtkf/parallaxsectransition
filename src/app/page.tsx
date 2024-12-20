@@ -48,7 +48,7 @@ const Section1 = ({ scrollYProgress }: SectionProps) => {
       style={{ scale, rotate }}
       className="sticky top-0 h-screen bg-[#C72626] text-[3.5vw] flex flex-col items-center justify-center text-white pb-[10vh] "
     >
-      <div className="font-imperial-script text-white text-8xl font-weight[500]">
+      <div className="flex justify-center items-center flex-wrap font-imperial-script text-white text-[10vw] font-weight[500]">
         Scroll Perspective
       </div>
       <div className="flex gap-4">
@@ -66,8 +66,14 @@ const Section2 = ({ scrollYProgress }: SectionProps) => {
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const rotate = useTransform(scrollYProgress, [0, 1], [-5, 0]);
   return (
-    <motion.div style={{ scale, rotate }} className="relative h-screen">
-      <Image src={Pic2} alt="img" placeholder="blur" fill />
+    <motion.div style={{ scale, rotate }} className="relative h-screen ">
+      <Image
+        src={Pic2}
+        alt="img"
+        placeholder="blur"
+        fill
+        style={{ objectFit: "cover", objectPosition: "center" }}
+      />
     </motion.div>
   );
 };
