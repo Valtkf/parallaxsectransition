@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Pic1 from "../../public/images/paysage-asie.jpg";
-import Pic2 from "../../public/images/guerrier-asie.jpg";
+import Pic1 from "../../public/images/paysage-asie.webp";
+import Pic2 from "../../public/images/guerrier-asie.webp";
 import { useScroll, useTransform, motion, MotionValue } from "motion/react";
 import Lenis from "lenis";
 
